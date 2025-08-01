@@ -1,0 +1,24 @@
+:root{
+    --cor--de-fundo: #FFFFFF;
+    --cor-primaria: #1D1E25;
+    --cor-secundaria: #3870FF;
+    --cor-neutra: #7E8492;
+    --cor-de-fundo-neutra: #FAFBFA;
+    --fonte: 'Inter';
+}
+
+@font-face{
+    font-family: 'Inter';
+    src: url('fonts/Inter-VariableFont_opsz_wght.ttf');
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.menu-desktop{
+    display: none;
+}
