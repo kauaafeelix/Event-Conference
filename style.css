@@ -17,6 +17,43 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: var(--fonte);
+}
+
+
+body{
+    background-color: var(--cor--de-fundo);
+    color: #1D1E25;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+ul li{
+    list-style: none;
+}
+
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header{
+    padding: 1rem 0;
+    width: 100%;
+}
+
+.header-inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .menu-desktop{
