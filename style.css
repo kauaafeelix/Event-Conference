@@ -136,3 +136,53 @@ ul li{
 .linha-marcas img{
     width: 45px;
 }
+
+.conteudo .container{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem ;
+    margin-top: 4rem;
+}
+
+
+.conteudo h2{
+    font-size: 32px;
+    font-weight: 600;
+    color: var(--cor-primaria);
+}
+.insights-container {
+    display: flex;
+    gap: 2rem; 
+    margin-top: 1rem;
+    text-align: justify;
+    margin-right: 1.4rem;
+    line-height: 26px;
+}
+
+.insights {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+
+
+.insights h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--cor-secundaria);
+    margin: 0rem 0rem 0.5rem 0rem;
+}
+
+.insights p {
+  font-weight: 600;
+    font-size: 18px;
+    color: var(--cor-primaria);
+    
+}
+
+.insights span {
+  font-size: 16px;
+  color: var(--cor-neutra);
+}
