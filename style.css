@@ -20,10 +20,14 @@
     font-family: var(--fonte);
 }
 
+html{
+    max-width: 100%;
+}
 
 body{
     background-color: var(--cor--de-fundo);
     color: #1D1E25;
+    max-width: 100%;
 }
 
 img{
@@ -124,17 +128,54 @@ ul li{
     font-weight: 600;
 }
 
-.linha-marcas{
-    display: flex;
-    flex-direction: row;
+.logos{
+    margin-top: 3.5rem;
     background-color: var(--cor-secundaria);
-    gap: 1.5rem;
+    padding: 2rem 0rem;
+}
+.logos img{
     width: 100%;
-    padding: 2rem 0;
+    height: 100%;
+}
+.logos-container{
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap:  nowrap;
+    gap: 1.1rem;
+    justify-content: center;
+    overflow: hidden;
+    
 }
 
-.linha-marcas img{
-    width: 45px;
+.logos #netflix{
+    width: 44px;
+    height: 14px;
+}
+
+.logos #google{
+    width: 48px;
+    height: 16px;
+}
+
+.logos #airbnb{
+    width: 50px;
+    height: 15px;
+}
+
+.logos #unicef{
+    width: 54px;
+    height: 13px;
+}
+
+.logos #adobe{
+    width: 52px;
+    height: 14px;
+}
+
+.logos #microsoft{
+    width: 60px;
+    height: 11px;
 }
 
 .conteudo .container{
@@ -185,4 +226,160 @@ ul li{
 .insights span {
   font-size: 16px;
   color: var(--cor-neutra);
+}
+
+/*tem que arrumar isso no css e no html*/
+/* a partir daqui */
+
+.eventos .container{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.eventos h2{
+    font-size: 32px;
+    font-weight: 600;
+    color: var(--cor-primaria);
+}
+.eventos p{
+    font-size: 16px;
+    color: var(--cor-neutra);
+    line-height: 26px;
+}
+
+.titulo-desc-img{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.lista-eventos{
+    width: 82%;
+}
+
+.lista-eventos ul{
+    display: grid;
+    grid-template-columns: 1fr; 
+    gap: 1.5rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.lista-eventos li{
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.lista-eventos span{
+    font-size: 16px;
+    color: var(--cor-primaria);
+    font-weight: 600;
+    text-align: left;
+    line-height: 26px;
+}
+
+.texto-video{
+    margin-top: 3rem;
+    background-color: var(--cor-secundaria);
+    padding: 3rem 1rem;
+}
+
+.texto-video .container{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+}
+
+.texto-video h2{
+    font-size: 32px;
+    font-weight: 600;
+    color: var(--cor--de-fundo);
+    line-height: 120%;
+}
+.texto-video p{
+    font-size: 16px;
+    color: var(--cor-de-fundo-neutra);
+    line-height: 26px;
+    font-weight: 300;
+}
+.content-botao-video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+.content-botao-video #video{
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+}
+.content-botao-video #reuniao{
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* ATE AQUI */
+
+.pessoas .container{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 4rem 0;
+}
+
+.pessoas .titulo-desc{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.pessoas .titulo-desc h2{
+    font-size: 32px;
+    font-weight: 600;
+    color: var(--cor-primaria);
+}
+.pessoas .titulo-desc span{
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--cor-neutra);
+}
+
+.numero-desc{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+.numero h2{
+    display: flex;
+    flex-direction: row;
+    font-size: 32px;
+    font-weight: 700;
+    justify-content: center;
+    align-items: center;
+    color: var(--cor-secundaria);
+}
+.numero-desc .desc{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    
+}
+
+.desc p{
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--cor-primaria);
+}
+
+.desc span{
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--cor-neutra);
 }
