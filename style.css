@@ -526,17 +526,21 @@ ul li{
 .essencial{
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 2rem;
     padding: 1rem 2rem;
     background-color: var(--cor-de-fundo-neutra);
 }
 .essencial h2{
     font-size: 32px;
-    font-weight: 700;
+    font-weight: 600;
     color: var(--cor-primaria);
 }
 
-
+.essencial p{
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--cor-neutra);
+}
 
 .essencial #btn{
     background-color: var(--cor-secundaria);
@@ -549,3 +553,63 @@ ul li{
     font-weight: 600;
     width: 239px; 
 }
+
+.container-preco {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.preco {
+    text-align: left;
+}
+
+.preco span {
+    text-decoration: line-through;
+    font-size: 1rem;
+    margin-right: 0.25rem;
+}
+
+.preco h3 {
+    display: inline;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.preco h4 {
+    display: inline;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-left: 0.25rem;
+}
+
+.preco p {
+    font-weight: 500;
+    font-size: 0.9rem;
+    color: var(--cor-neutra);
+}
+
+.incluso h4 {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 0.75rem;
+}
+
+.incluso ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.incluso li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.incluso li img {
+    width: 16px;
+    height: 16px;
+}
+
