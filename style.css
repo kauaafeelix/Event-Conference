@@ -43,9 +43,11 @@ ul li{
     list-style: none;
 }
 
+section{
+    padding: 0 1rem;
+}
 .container{
     width: 100%;
-    padding: 0 1rem;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -228,9 +230,6 @@ ul li{
   color: var(--cor-neutra);
 }
 
-/*tem que arrumar isso no css e no html*/
-/* a partir daqui */
-
 .eventos .container{
     display: flex;
     flex-direction: column;
@@ -268,28 +267,28 @@ ul li{
 
 .lista-eventos li{
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     gap: 1rem;
 }
 
 .lista-eventos span{
     font-size: 16px;
     color: var(--cor-primaria);
-    font-weight: 600;
-    text-align: left;
+    font-weight: 500;
     line-height: 26px;
 }
 
 .texto-video{
     margin-top: 3rem;
     background-color: var(--cor-secundaria);
-    padding: 3rem 1rem;
+    padding: 3rem 1rem 6rem;
 }
 
 .texto-video .container{
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+
     text-align: center;
 }
 
@@ -310,13 +309,13 @@ ul li{
     justify-content: center;
     align-items: center;
     gap: 1rem;
-    margin-top: 2rem;
+    margin-top: 20rem;
+    position: absolute;
 }
 .content-botao-video #video{
     position: absolute;
     width: 45px;
     height: 45px;
-    cursor: pointer;
 }
 .content-botao-video #reuniao{
     margin: 0 auto;
@@ -325,13 +324,11 @@ ul li{
     border-radius: 8px;
 }
 
-/* ATE AQUI */
-
 .pessoas .container{
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    margin: 4rem 0;
+    margin: 10rem 0rem 4rem 0rem;
 }
 
 .pessoas .titulo-desc{
@@ -355,14 +352,13 @@ ul li{
     display: flex;
     flex-direction: row;
     gap: 2rem;
+    align-items: center;
 }
 .numero h2{
     display: flex;
     flex-direction: row;
     font-size: 32px;
     font-weight: 700;
-    justify-content: center;
-    align-items: center;
     color: var(--cor-secundaria);
 }
 .numero-desc .desc{
@@ -433,7 +429,7 @@ ul li{
 .card-profissional{
     display: flex;
     flex-direction: column;
-    gap: 1rem; /* tem que arrumar aqui também */
+    gap: 2rem;
 }
 
 .card-individual .container .comentario h2{
@@ -441,6 +437,7 @@ ul li{
     font-weight: 600;
     color: var(--cor-primaria);
     line-height: 120%;
+    margin-top: 1rem;
 }
 
 .texto-botao{
@@ -567,6 +564,7 @@ ul li{
 .preco span {
     text-decoration: line-through;
     font-size: 1rem;
+    font-weight: 500;
     margin-right: 0.25rem;
 }
 
@@ -585,8 +583,8 @@ ul li{
 
 .preco p {
     margin-top: 1rem !important;
-    font-weight: 500;
-    font-size: 0.9rem;
+    font-weight: 400;
+    font-size: 18px;
     color: var(--cor-neutra);
 }
 
@@ -600,7 +598,9 @@ ul li{
     list-style: none;
     padding: 0;
     margin: 0;
-    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
 }
 
 .incluso li {
@@ -617,3 +617,177 @@ ul li{
     margin-right: 0.5rem;
 }
 
+.pro{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1rem 2rem;
+    background-color: var(--cor-de-fundo-neutra);
+}
+
+.pro .descricao{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem; 
+}
+
+.pro .descricao h2{
+    font-size: 32px;
+    font-weight: 600;
+    color: var(--cor-primaria);
+}
+
+.pro .descricao p{
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--cor-neutra);
+}
+
+.pro #btn{
+    background-color: var(--cor-secundaria);
+    color: var(--cor--de-fundo);
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    font-size: 16px;
+    box-sizing: border-box;
+    font-weight: 600;
+    width: 239px; 
+}
+
+.premium{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1rem 2rem;
+    background-color: var(--cor-de-fundo-neutra);
+}
+
+.premium .descricao{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem; 
+}
+
+.premium .descricao h2{
+    font-size: 32px;
+    font-weight: 600;
+    color: var(--cor-primaria);
+}
+
+.premium .descricao p{
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--cor-neutra);
+}
+
+.premium #btn{
+    background-color: var(--cor-secundaria);
+    color: var(--cor--de-fundo);
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    font-size: 16px;
+    box-sizing: border-box;
+    font-weight: 600;
+    width: 239px; 
+}
+
+.footer{
+    background-color: var(--cor-secundaria);
+    padding: 3rem 1rem ;
+    color: var(--cor--de-fundo);
+    margin: 3rem 0rem 0rem 0rem;
+}
+
+.footer .container{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.footer .container .titulo h2{
+    display: flex;
+    flex-direction: row;
+    font-size: 32px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.footer .container .localizacao-email{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.footer .container .localizacao-email .localizacao,
+.footer .container .localizacao-email .email{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footer .container #logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.footer .container .footer-social{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.footer .container .footer-social .linha1{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.footer .container .footer-social p{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.footer .container .footer-social .linha2{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.footer .container .footer-social-icons{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.footer .container .direitos{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.footer .container .direitos hr{
+    background-color: #7E8492;
+    border: 0;
+    height: 1px;
+    margin-right: 1rem;
+}
+
+.footer .container .direitos .termos{
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.footer .container .direitos .copyright{
+    font-size: 16px;
+    font-weight: 300;
+
+}
