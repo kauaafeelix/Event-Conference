@@ -584,6 +584,7 @@ ul li{
 }
 
 .preco p {
+    margin-top: 1rem !important;
     font-weight: 500;
     font-size: 0.9rem;
     color: var(--cor-neutra);
@@ -599,6 +600,7 @@ ul li{
     list-style: none;
     padding: 0;
     margin: 0;
+    gap: 1rem;
 }
 
 .incluso li {
@@ -606,10 +608,12 @@ ul li{
     align-items: center;
     margin-bottom: 0.5rem;
     font-size: 0.9rem;
+    font-weight: 500;
 }
 
 .incluso li img {
     width: 16px;
     height: 16px;
+    margin-right: 0.5rem;
 }
 
