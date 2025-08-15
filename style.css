@@ -5,6 +5,7 @@
     --cor-neutra: #7E8492;
     --cor-de-fundo-neutra: #FAFBFA;
     --fonte: 'Inter';
+    --fonte-secundaria: 'Sora';
 }
 
 @font-face{
@@ -12,6 +13,10 @@
     src: url('fonts/Inter-VariableFont_opsz_wght.ttf');
 }
 
+@font-face {
+    font-family: 'Sora' ;
+    src: url(fonts/Sora-VariableFont_wght.ttf);
+}
 
 *{
     margin: 0;
@@ -53,14 +58,22 @@ section{
 }
 
 .header{
-    padding: 1rem 0;
+    padding: 1rem 1rem;
     width: 100%;
 }
 
-.header-inner{
+.menu-mobile{
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
     align-items: center;
+    justify-content: space-between;
+}
+
+.menu-mobile #logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
 }
 
 .menu-desktop{
@@ -128,6 +141,23 @@ section{
 .avaliacoes p{
     font-size: 16px;
     font-weight: 600;
+}
+
+#imagem-hero-mob{
+    align-self: center;
+    justify-self: center;
+}
+
+#imagem-hero-desk{
+    display: none;
+}
+
+.logos #shipbob{
+    display: none;
+}
+
+.logos #slack{
+    display: none;
 }
 
 .logos{
@@ -789,5 +819,144 @@ section{
 .footer .container .direitos .copyright{
     font-size: 16px;
     font-weight: 300;
+}
+
+
+@media (min-width: 1024px) {
+    .menu-mobile, #imagem-hero-mob, #texto-hero{
+        display: none;
+    }
+
+    .menu-desktop {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 0rem;
+    }
+    .menu-desktop #logo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.5rem;
+    }
+    .menu-desktop .opcoes-menu ul {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+    }
+
+    .menu-desktop .opcoes-menu ul li {
+        font-size: 16px;
+        font-weight: 500;
+        color: var(--cor-primaria);
+    }
+
+    .menu-desktop .opcoes-menu ul li span{
+        color: var(--cor-secundaria);
+        font-weight: 700;
+    }
+
+    .menu-desktop .login-menu ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
+    }
+    
+    .menu-desktop .login-menu ul a{
+        font-size: 16px;
+        font-weight: 600; 
+        font-family: var(--fonte-secundaria) !important;
+        color: var(--cor-primaria);
+    }
+    .menu-desktop .login-menu ul #btn-singup{
+        border: 1px solid;
+        padding: 1rem 1.5rem;
+        background-color: var(--cor--de-fundo);
+        border-radius: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .menu-desktop .login-menu ul #btn{
+        border: 0;
+        background-color: var(--cor--de-fundo);
+        width: 100px;
+        height: 40px;
+        border-radius: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #imagem-hero-desk{
+        display: block;
+        align-self: center;
+        justify-self: center;
+    }
+
+    .hero{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+
+    .hero-content{
+        display: flex;
+        flex-direction: column;
+        padding: 0 3rem;
+        align-items: center;
+        width: 50%;
+    }
+    .hero-content .titulo-desc h1{
+        font-size: 72px;
+        line-height: 120%;
+        margin-top: 2rem;
+        letter-spacing: 2px;
+        text-align: left;
+    }
+
+    .hero-content .botoes{
+        display: flex;
+        flex-direction: row;
+        justify-self: start;
+        align-self: flex-start;
+        gap: 2rem;
+    }
+
+    .hero-content .avaliacoes{
+        display: flex;
+        flex-direction: row;
+        justify-self: start;
+        align-self: flex-start;
+        gap: 1rem;
+    }
+
+    .hero-image{
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        order: -1;
+        width: 40%;
+        padding: 0 3.5rem;
+    }
+    .hero-image p{
+        font-size: 18px;
+        color: var(--cor-neutra);
+        line-height: 32px;
+        font-weight: 500;
+        text-align: left;
+    }
+
+    .image-events{
+        width: 100%;
+    }
+
+    .image-events img{
+        width: 100%;
+        height: auto;
+    }
+
 
 }
