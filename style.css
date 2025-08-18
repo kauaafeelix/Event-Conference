@@ -229,24 +229,34 @@ section{
 
 .conteudo .container{
     display: flex;
-    flex-direction: column;
+    flex-direction: column !important;
     gap: 1rem ;
     margin-top: 4rem;
 }
 
 
-.conteudo h2{
+.insights-container h2{
     font-size: 32px;
     font-weight: 600;
     color: var(--cor-primaria);
+    letter-spacing: 1px;
+    line-height: 32px;
 }
+
 .insights-container {
     display: flex;
+    flex-direction: column;
     gap: 2rem; 
     margin-top: 1rem;
     text-align: justify;
     margin-right: 1.4rem;
     line-height: 26px;
+}
+
+.insights-container .imagem{
+    width: 100%;
+    height: auto;
+    align-self: center;
 }
 
 .insights {
@@ -256,23 +266,27 @@ section{
     gap: 0.5rem;
 }
 
+.bloco-insights{
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+}
 
 
-.insights h3 {
+.bloco-insights .insights h3 {
     font-size: 24px;
     font-weight: 600;
     color: var(--cor-secundaria);
     margin: 0rem 0rem 0.5rem 0rem;
 }
 
-.insights p {
+.bloco-insights .insights p {
   font-weight: 600;
     font-size: 18px;
     color: var(--cor-primaria);
-    
 }
 
-.insights span {
+.bloco-insights .insights span {
   font-size: 16px;
   color: var(--cor-neutra);
 }
@@ -1007,6 +1021,67 @@ section{
         height: auto;
         padding: 2rem 5rem 0rem 0rem;
     }
+    .parte-cima-events{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .parte-cima-events p{
+        color: var(--cor-neutra);
+        font-weight: 600;
+        font-size: 16px;
+    }
+
+    .parte-baixo-events{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1.5rem;
+    }
+    .parte-baixo-events .texto-pbe{
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .parte-baixo-events .texto-pbe span{
+        color: var(--cor-secundaria);
+        font-weight: 600;
+    }
+    .parte-baixo-events .texto-pbe p{
+        font-weight: 500;
+    }
+    
+    .logos-container #slack{
+        display: block;
+    }
+
+    .logos-container #shipbob{
+        display: block;
+    }
+
+    .logos .logos-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .logos .logos-container img{
+        width: 100px !important;
+        height: 80px !important;
+    }
+
+    .conteudo .container{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .conteudo .container img{
+        order: -1;
+    }
+
+
 
     
 
