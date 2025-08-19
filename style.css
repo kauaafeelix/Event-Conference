@@ -332,6 +332,10 @@ section{
     gap: 1.5rem;
 }
 
+#eventos-img-desktop {
+    display: none !important;
+}
+
 .lista-eventos{
     width: 82%;
 }
@@ -1216,8 +1220,6 @@ section{
 
 
 
-
-    
 
 
 }
