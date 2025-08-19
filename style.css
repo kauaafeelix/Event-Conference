@@ -1090,25 +1090,72 @@ section{
 
     /* daqui para cima está pronto o desktop */
     
+    .logos{
+        margin-top: 3.5rem;
+        background-color: var(--cor-secundaria);
+        padding: 4rem 0rem;
+    }
+    
+    .logos .logos-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+    }
+    
+    .logos .logos-container img{
+        width: 146px !important;
+        height: 94px !important;
+    }
+
     .logos-container #slack{
         display: block;
+        width: 140px !important;
+        height: 36px !important;
     }
 
     .logos-container #shipbob{
         display: block;
+        width: 112px !important;
+        height: 36px !important;
     }
 
-    .logos .logos-container{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
+    .logos-container #netflix{
+        display: block;
+        width: 103px !important;
+        height: 32px !important;
     }
 
-    .logos .logos-container img{
-        width: 100px !important;
-        height: 80px !important;
+    .logos-container #google{
+        display: block;
+        width: 112px !important;
+        height: 36px !important;   
     }
 
+    .logos-container #airbnb{
+        display: block;
+        width: 116px !important;
+        height: 36px !important;
+        
+    }
+
+    .logos-container #unicef{
+        display: block;
+        width: 139px !important;
+        height: 43px !important;
+    }
+    .logos-container #adobe{
+        display: block;
+        width: 122px !important;
+        height: 32px !important;
+    }
+
+    .logos-container #microsoft{
+        display: block;
+        width: 140px !important;
+        height: 26px !important;
+    }
     .conteudo .container{
         display: flex;
         flex-direction: row;
