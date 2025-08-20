@@ -326,7 +326,7 @@ section{
     line-height: 26px;
 }
 
-.titulo-desc-img{
+.titulo-desc-img-mob{
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
@@ -1218,8 +1218,116 @@ section{
         line-height: 26px;
     }
 
+    .conteudo .container .insights-container .imagem{
+        width: 100%;
+        height: auto;
+        align-self: center;
+    }
 
 
+    #eventos-img-desktop {
+        display: flex !important;
+        width: 100%;
+        height: auto;
+    }
+    #eventos-img-mob {
+        display: none;
+    }
+
+    .titulo-desc-img-mob{
+        display: none;
+    }
+
+    .eventos .container{
+        display: flex;
+        flex-direction: row;
+        max-width: 100%;
+        align-items: center;
+        gap: 4rem !important;
+        padding: 4rem 0rem;
+    }
+
+    .eventos .container .imagem{
+        width: 50%;
+        height: auto;
+    }
+
+    .eventos .container .lista-eventos{
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .eventos .container .lista-eventos .titulo-desc-img-desktop{
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        text-align: left;
+    }
+
+    .eventos .container .lista-eventos .titulo-desc-img-desktop h2{
+        font-size: 56px;
+        font-weight: 600;
+        color: var(--cor-primaria);
+        line-height: 120%;
+        letter-spacing: -0.6px;
+    }
+
+    .eventos .container .lista-eventos .titulo-desc-img-desktop p{
+        font-size: 18px;
+        font-weight: 450;
+        color: var(--cor-neutra);
+        line-height: 32px;
+    }
+
+    .eventos .container .lista-eventos br{
+        display: none;
+    }
+
+    .eventos .container .lista-eventos ul{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 1.5rem;
+        list-style: none;
+    }
+
+    .eventos .container .lista-eventos li{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+    .eventos .container .lista-eventos span{
+        font-size: 18px;
+        color: var(--cor-primaria);
+        font-weight: 600;
+        line-height: 26px;
+    }
+
+    .eventos .container .lista-eventos #li-1{
+        order: -5;
+    }
+    .eventos .container .lista-eventos #li-2{
+        order: -1;
+    }
+    .eventos .container .lista-eventos #li-3{
+        order: 4;
+    }
+    .eventos .container .lista-eventos #li-4{
+        order: 7;
+    }
+    .eventos .container .lista-eventos #li-5{
+        order: -3;
+    }
+    .eventos .container .lista-eventos #li-6{
+        order: 3;
+    }
+    .eventos .container .lista-eventos #li-7{
+        order: 5;
+    }
+    .eventos .container .lista-eventos #li-8{
+        order: 9;
+    }
 
 
 }
