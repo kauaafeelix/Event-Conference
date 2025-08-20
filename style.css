@@ -464,18 +464,22 @@ section{
     color: var(--cor-neutra);
 }
 
-.cards{
+.cards-mob{
     display: flex;
     flex-direction: column;
     gap: 1rem;
     padding: 0rem 1.5rem;
 }
 
-.cards p{
+.cards-mob p{
     font-size: 16px;
     font-weight: 500;
     color: var(--cor-neutra);
     line-height: 160%;
+}
+
+.cards-desktop{
+    display: none;
 }
 
 .pessoas .container {
