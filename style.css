@@ -508,7 +508,7 @@ section{
     align-items: center;
 }
 
-.pessoas .container .botao {
+.pessoas .container .botao-mobile {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -520,12 +520,16 @@ section{
     font-weight: 600;
 }
 
-.pessoas .container .botao #btn {
+.pessoas .container .botao-mobile #btn {
     border: 0;
     background-color: transparent;
     color: inherit;
     font-size: 16px;
     font-weight: 600;
+}
+
+.pessoas .container .botao-desktop{
+    display: none;
 }
 
 .card-individual .container{
@@ -1353,9 +1357,23 @@ section{
         order: 9;
     }
 
+    /* Esta section precisa arrumar no desktop e no mobile */
+
     .texto-video .container .content-botao-video #reuniao-mob{
         display: none;
     }
 
+    /* ======================================================= */
+    
+    .pessoas .container{
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+        padding: 4rem 0rem;
+    }
+
+    .pessoas .container .cards .cards-desktop{
+        display: block;
+    }
 
 }
