@@ -394,18 +394,20 @@ section{
     align-items: center;
     gap: 1rem;
     margin-top: 20rem;
-    position: absolute;
 }
 .content-botao-video #video{
-    position: absolute;
     width: 45px;
     height: 45px;
 }
-.content-botao-video #reuniao{
+.content-botao-video #reuniao-mob{
     margin: 0 auto;
     width: 100%;
     height: auto;
     border-radius: 8px;
+}
+
+.content-botao-video #reuniao-mob{
+    display: none;
 }
 
 .pessoas .container{
@@ -1345,6 +1347,9 @@ section{
         order: 9;
     }
 
+    .texto-video .container .content-botao-video #reuniao-mob{
+        display: none;
+    }
 
 
 }
