@@ -770,7 +770,7 @@ section{
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    padding: 1rem 2rem;
+    padding: 1rem 1rem;
     background-color: var(--cor-de-fundo-neutra);
 }
 
@@ -809,7 +809,7 @@ section{
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    padding: 1rem 2rem;
+    padding: 1rem 1rem;
     background-color: var(--cor-de-fundo-neutra);
 }
 
