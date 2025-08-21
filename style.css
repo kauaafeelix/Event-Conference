@@ -1049,7 +1049,12 @@ section{
     .hero{
         display: flex;
         justify-content: space-evenly;
+        background-image: url(images/linhas\ de\ fundo.png);
+        background-position: right ;
+        background-repeat: no-repeat;  
     }
+
+
 
 
     .hero-content{
