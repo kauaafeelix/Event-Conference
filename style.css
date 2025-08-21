@@ -800,6 +800,10 @@ section{
     background-color: #FCFCFF;
 }
 
+.pro #most-popular{
+    display: none;
+}
+
 .pro .descricao{
     display: flex;
     flex-direction: column;
@@ -1650,7 +1654,6 @@ section{
         display: block;
         width: 100%;
         height: auto;
-        border-radius: 8px;
     }
 
     .card-individual .container{
@@ -1724,15 +1727,170 @@ section{
 
     .preco-planos .container {
         display: flex;
-        flex-direction: row;
-        gap: 2rem;
+        flex-direction: row !important;
+        max-width: 100% !important;
+        padding: 8rem 0rem 4rem 0rem;
     }
 
-    .preco-planos .container .precos{
+    .preco-planos .container .precos-mob{
+        display: none;
+    }
+
+    
+    .preco-planos .container .planos{
+        display: flex;
+        flex-direction: row;
+        gap: 2px;
+        padding-left: 2rem;
+    }
+    
+    .preco-planos .container .precos-desktop{
         display: flex;
         flex-direction: column;
-        order: 1;
+        gap: 1rem;
+    }
+    
+    .preco-planos .container .precos-desktop #btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 187px;
+        height: 56px;
+        border: none;
+        border-radius: 50px;
+        background-color: var(--cor-secundaria);
+        color: var(--cor--de-fundo);
+        font-weight: 600;
     }
 
+    .preco-planos .container .planos .precos-desktop{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        padding: 0 4rem;
+        text-align: left;
+        width: 40%;
+    }
 
+    .preco-planos .container .planos .precos-desktop h2{
+        font-size: 48px;
+        font-weight: 600;
+        color: var(--cor-primaria);
+        line-height: 120%;
+        letter-spacing: -0.5px;
+    }
+
+    .preco-planos .container .planos .precos-desktop p{
+        font-size: 18px;
+        font-weight: 400;
+        color: var(--cor-neutra);
+        line-height: 32px;
+    }
+
+    #btn-preco {
+       background-color: #936bff0c;
+    }
+
+    .preco-planos .container .planos .essencial{
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        padding: 1rem 1rem;
+    }
+    .preco-planos .container .planos .essencial h2{
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 120%;
+        letter-spacing: -0.3px;
+        color: var(--cor-primaria);
+    }
+    
+    .preco-planos .container .planos .essencial p{
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 32px;
+        color: var(--cor-neutra);
+    }
+
+    .preco-planos .container .planos .pro{
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        padding: 1rem 1rem;
+    }
+    .preco-planos .container .planos .pro h2{
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 120%;
+        letter-spacing: -0.3px;
+        color: var(--cor-primaria);
+    }
+    .preco-planos .container .planos .pro p{
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 32px;
+        color: var(--cor-neutra);
+    }
+    .preco-planos .container .planos .premium{
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        gap: 3.5rem;
+        padding: 1rem 1rem;
+    }
+    .preco-planos .container .planos .premium h2{
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 120%;
+        letter-spacing: -0.3px;
+        color: var(--cor-primaria);
+    }
+
+    .preco-planos .container .planos .premium h3{
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 120%;
+        color: var(--cor-primaria);
+    }
+
+    .preco-planos .container .planos .premium p{
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 32px;
+        color: var(--cor-neutra);
+    }
+
+    .preco-planos .container .planos .essencial ul li{
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .preco-planos .container .planos .pro ul li{
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .preco-planos .container .planos .premium ul li{
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .preco-planos .container .planos {
+        position: relative;
+    }
+    .preco-planos .container .planos .pro {
+        position: relative;
+    }
+    .preco-planos .container .planos .pro #most-popular{
+        display: flex;
+        position: absolute;
+        top: -5rem;
+        left: 75%;
+        transform: translateX(-50%);
+        width: 153px;
+        height: auto;
+        z-index: 2;
+    }
 }
