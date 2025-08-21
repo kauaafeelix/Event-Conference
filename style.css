@@ -1376,4 +1376,24 @@ section{
         display: block;
     }
 
+    .pessoas .container .titulo-numero-desc .botao-desktop{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 142px;
+        height: 54px;
+        border-radius: 50px;
+        background-color: var(--cor-secundaria);
+        color: var(--cor--de-fundo);
+        font-weight: 600;
+    }
+    .pessoas .container .titulo-numero-desc .botao-desktop #btn {
+        border: 0;
+        background-color: transparent;
+        color: inherit;
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+
 }
