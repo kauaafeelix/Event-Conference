@@ -661,13 +661,18 @@ section{
     width: 187px; 
 }
 
-
+.preco-planos .container .planos{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1rem 1rem;
+}
 
 .essencial{
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    padding: 1rem 2rem;
+    padding: 1rem 1rem;
     background-color: var(--cor-de-fundo-neutra);
 }
 .essencial h2{
@@ -679,6 +684,7 @@ section{
 .essencial p{
     font-size: 18px;
     font-weight: 400;
+    line-height: 32px;
     color: var(--cor-neutra);
 }
 
@@ -783,6 +789,7 @@ section{
 .pro .descricao p{
     font-size: 18px;
     font-weight: 400;
+    line-height: 32px;
     color: var(--cor-neutra);
 }
 
@@ -821,6 +828,7 @@ section{
 .premium .descricao p{
     font-size: 18px;
     font-weight: 400;
+    line-height: 32px;
     color: var(--cor-neutra);
 }
 
@@ -854,13 +862,15 @@ section{
     flex-direction: row;
     font-size: 32px;
     font-weight: 600;
-    letter-spacing: 1px;
+    letter-spacing: -00.3px;
+    padding: 0rem 1.5rem 0rem 0rem;
 }
 
 .footer .container .localizacao-email{
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+    padding: 0rem 1rem 0rem 0rem;
 }
 
 .footer .container .localizacao-email .localizacao,
@@ -931,7 +941,8 @@ section{
 
 .footer .container .direitos .copyright{
     font-size: 16px;
-    font-weight: 300;
+    font-weight: 300 !important;
+    line-height: 26px;
 }
 
 
