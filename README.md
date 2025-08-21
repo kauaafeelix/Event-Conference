@@ -29,7 +29,7 @@ O site foi construído com foco em:
 
 📦 Event-Conference
 - ┣ 📂 images     -   **Imagens e ícones utilizados no site**
-- ┣ 📂 fonts      -  **Pasta de fontes**
+- ┣ 📂 fonts      -  **Fontes Utilizadas**
 - ┣ 📜 style.css  - **Arquivo de Estilo**
 - ┣ 📜 index.html -  **Estrutura principal do site**
 - ┗ 📜 README.md  -  **Documentação do projeto**
