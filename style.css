@@ -1921,11 +1921,44 @@ section{
 
     .footer{
         display: flex;
-        flex-direction: row;
-        padding: 0 !important;
+        flex-direction: column;
+        padding: 5rem 0rem;
         margin: 0 !important;
         background-image: url(images/c.png);
         background-position: 90%;
         background-repeat: no-repeat;
     }
+
+    .footer .container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer .container .titulo-localizacao-email{
+        display: flex;
+        flex-direction: row;
+    }
+    .footer .container .titulo-localizacao-email .titulo h2{
+        font-size: 64px;
+        line-height: 120%;
+        letter-spacing: -1px;
+        font-family: var(--fonte-poppins);
+    }
+
+    .footer .container .footer-social{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .footer .container .direitos hr{
+        display: none;
+    }
+
+    .footer .container .direitos{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between !important;
+    }
+
 }
