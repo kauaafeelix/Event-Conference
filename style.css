@@ -923,6 +923,13 @@ section{
     font-weight: 300;
 }
 
+.footer .container .localizacao-email #ponto-localizacao-desk{
+    display: none;
+}
+
+.footer .container .localizacao-email #caixa-email-desk{
+    display: none;
+}
 
 .footer .container #logo{
     display: flex;
@@ -957,6 +964,10 @@ section{
 .footer .container .footer-social p{
     font-size: 16px;
     font-weight: 300;
+}
+
+.footer .container hr{
+    display: none;
 }
 
 .footer .container .footer-social .linha2{
@@ -1922,8 +1933,8 @@ section{
     .footer{
         display: flex;
         flex-direction: column;
-        padding: 5rem 0rem;
-        margin: 0 !important;
+        padding: 5rem 0rem 3rem;
+        margin: 2rem 0rem 0rem 0rem;
         background-image: url(images/c.png);
         background-position: 90%;
         background-repeat: no-repeat;
@@ -1937,18 +1948,73 @@ section{
     .footer .container .titulo-localizacao-email{
         display: flex;
         flex-direction: row;
+        width: 100%;
     }
+
+
+    .footer .container .titulo-localizacao-email #ponto-localizacao-mob{
+        display: none;
+    }
+
+    .footer .container .titulo-localizacao-email #ponto-localizacao-desk{
+        display: block;
+    }
+
+    .footer .container .titulo-localizacao-email #caixa-email-desk{
+        display: block;
+    }
+
+    .footer .container .titulo-localizacao-email #caixa-email-mob{
+        display: none;
+    }
+    
+
     .footer .container .titulo-localizacao-email .titulo h2{
         font-size: 64px;
         line-height: 120%;
         letter-spacing: -1px;
         font-family: var(--fonte-poppins);
+        width: 85%;
     }
 
     .footer .container .footer-social{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        align-items: center;
+    }
+
+    .footer .container .footer-social #logo #logo-preto{
+        display: none;
+    }
+
+    .footer .container .footer-social #logo #logo-branco-desktop{
+        display: block;
+        order: -1;
+    }
+
+    .footer .container .footer-social .footer-social-icons{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .footer .container .footer-social .linhas{
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .footer .container .footer-social .footer-social-icons img{
+        width: 20px;
+        height: 20px;
+    }
+
+    .footer .container hr{
+        display: flex;
+        flex-direction: row;
+        background-color: #7E8492;
+        border: 0;
+        height: 1px;
+        margin-right: 1rem;
     }
 
     .footer .container .direitos hr{
@@ -1959,6 +2025,10 @@ section{
         display: flex;
         flex-direction: row;
         justify-content: space-between !important;
+    }
+
+    .footer .container .direitos .termos{
+        order: 1;
     }
 
 }
