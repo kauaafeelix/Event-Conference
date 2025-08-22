@@ -887,7 +887,13 @@ section{
     gap: 2rem;
 }
 
-.footer .container .titulo h2{
+.footer .container .titulo-localizacao-email{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.footer .container .titulo-localizacao-email .titulo h2{
     display: flex;
     flex-direction: row;
     font-size: 32px;
@@ -896,7 +902,7 @@ section{
     padding: 0rem 1.5rem 0rem 0rem;
 }
 
-.footer .container .localizacao-email{
+.footer .container .titulo-localizacao-email .localizacao-email{
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
@@ -911,18 +917,35 @@ section{
     gap: 1rem;
 }
 
+.footer .container .titulo-localizacao-email .localizacao-email p{
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 300;
+}
+
+
 .footer .container #logo{
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 1rem;
-    margin-top: 1rem;
+    padding: 2rem 0rem;
 }
 
 .footer .container .footer-social{
     display: flex;
     flex-direction: column;
     gap: 1rem;
+}
+
+.footer .container .footer-social .linhas{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.footer .container .footer-social #logo-branco-desktop{
+    display: none;
 }
 
 .footer .container .footer-social .linha1{
@@ -933,7 +956,7 @@ section{
 
 .footer .container .footer-social p{
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 300;
 }
 
 .footer .container .footer-social .linha2{
@@ -945,7 +968,7 @@ section{
 .footer .container .footer-social-icons{
     display: flex;
     flex-direction: row;
-    gap: 1rem;
+    gap: 1.5rem;
 }
 
 .footer .container .direitos{
@@ -969,9 +992,9 @@ section{
     font-size: 16px;
 }
 
-.footer .container .direitos .copyright{
+.footer .container .direitos .copyright p{
     font-size: 16px;
-    font-weight: 300 !important;
+    font-weight: 300;
     line-height: 26px;
 }
 
@@ -1880,9 +1903,11 @@ section{
     .preco-planos .container .planos {
         position: relative;
     }
+
     .preco-planos .container .planos .pro {
         position: relative;
     }
+
     .preco-planos .container .planos .pro #most-popular{
         display: flex;
         position: absolute;
@@ -1892,5 +1917,15 @@ section{
         width: 153px;
         height: auto;
         z-index: 2;
+    }
+
+    .footer{
+        display: flex;
+        flex-direction: row;
+        padding: 0 !important;
+        margin: 0 !important;
+        background-image: url(images/c.png);
+        background-position: 90%;
+        background-repeat: no-repeat;
     }
 }
